@@ -1,0 +1,161 @@
+.myEatCard {
+  position: relative;
+}
+
+.myEatCard::after {
+  position: absolute;
+  content: "";
+  bottom: -30px;
+  right: -90px;
+  left: 0;
+  border-bottom: 1px solid #252322;
+  opacity: 0.1;
+}
+
+.textBlock {
+  margin-top: 40px;
+}
+
+.textLocation {
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.descripLocation {
+  font-family: 'Baloo 2', cursive;
+  font-weight: normal;
+}
+
+.customRow {
+  display: flex;
+  margin-top: 90px;
+  justify-content: space-between;
+}
+
+.myCardImage {
+  border-radius: 10px;
+}
+
+.myCardImage img {
+  width: 710px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.myCardLinks {
+  display: flex;
+  position: absolute;
+  bottom: 30%;
+  left: 5%;
+}
+
+.myLink {
+  background: #fff;
+  border-radius: 14px;
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+  transform-origin: center;
+  width: calc(50% - 15px);
+  margin: 0 7.5px;
+  min-height: 60px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+  font-size: 14px;
+  color: #252322;
+  margin-bottom: 10px;
+  box-shadow: 0 16px 34px rgb(27 10 0 / 10%);
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.myLink:hover {
+  transform: scale(1.05);
+  color: #000;
+}
+
+.myLink img {
+  margin-right: 18px;
+}
+
+.cardContact {
+  color: #2b7fff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.textContent {
+  margin-left: 20px;
+}
+
+.cardTitle {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 700;
+  font-size: 24px;
+  color: #252322;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.cardDescription {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+  font-size: 14px;
+  color: #252322;
+  margin-bottom: 15px;
+}
+
+.socialNetworks {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.cusRow {
+  justify-content: center;
+  max-height: 75vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+.cusRow::-webkit-scrollbar {
+  width: 0;
+}
+
+.cardsContent {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+
+.allCard {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.allCard a{
+  background: #fc772c;
+  box-shadow: 0 24px 44px rgb(255 103 17 / 27%);
+  border-radius: 12px;
+  padding: 17px 63px;
+  font-family: Comfortaa;
+  font-weight: 700;
+  font-size: 18px;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  transform-origin: center;
+  text-decoration: none;
+}
+
+.allCard a:hover{
+  transform: scale(1.08);
+}
+
+.miniCardsWrapper{
+  margin-top: 195px;
+}

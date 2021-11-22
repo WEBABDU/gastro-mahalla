@@ -1,0 +1,140 @@
+.imgSec {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  position: relative;
+  padding: 17px;
+  background: #fc772c;
+  border-radius: 24px;
+  justify-content: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.avatar input {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+}
+
+.avatar span {
+  position: absolute;
+  bottom: -22px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-family: Baloo2;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fc772c;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 24px;
+}
+
+.pName {
+  font-family: "Baloo 2", cursive;
+  font-weight: 600;
+  font-size: 22px;
+  color: #252322;
+  margin-bottom: 5px;
+}
+
+.pStatus {
+  font-family: "Baloo 2", cursive;
+  font-weight: 600;
+  font-size: 12px;
+  color: #fc772c;
+}
+
+.infoSec {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.infoCard {
+  width: calc(50% - 15px);
+  margin-bottom: 30px;
+}
+
+.infoCard label {
+  font-family: "Baloo 2", cursive;
+  font-weight: 400;
+  font-size: 12px;
+  color: #252322;
+  opacity: 0.4;
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+.infoCard input {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  font-family: "Baloo 2", cursive;
+  font-weight: 500;
+  font-size: 18px;
+  color: #252322;
+  border: none;
+  outline: none;
+}
+
+.infoButtons {
+  margin-left: auto;
+  margin-top: 45px;
+  width: 75%;
+}
+
+.buttons {
+  width: calc(100% + 15px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.buttons input {
+  margin: 0 15px;
+  width: calc(50% - 30px);
+  padding: 15px 35px;
+  justify-content: center;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #252322;
+  background: #f8f8f8;
+  border-radius: 12px;
+  box-shadow: 0 34px 44px rgb(0 0 0 / 8%);
+  transition: 0.3s ease-in-out;
+}
+
+.buttonSave {
+  width: 210px;
+  height: 54px;
+  box-shadow: 0px 24px 44px rgba(255, 103, 17, 0.27);
+  border-radius: 12px;
+  border: none;
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff !important;
+  background-color: #fc772c !important;
+}

@@ -1,0 +1,54 @@
+.label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.label:not(:last-child) {
+  margin-right: 60px;
+}
+
+.checkBox {
+  display: none;
+}
+
+.fake {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #fc772c;
+  border-radius: 7px;
+  position: relative;
+  background: rgba(252, 119, 44, 0.1);
+}
+
+.checkBox:hover + .fake {
+  background-color: #fc772c;
+}
+
+.fake::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 2px;
+  display: block;
+  width: 7px;
+  height: 13px;
+  opacity: 0;
+  transition: 0.2s;
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.checkBox:checked + .fake {
+  background-color: #fc772c;
+}
+
+.checkBox:checked + .fake::before {
+  opacity: 1;
+}
+
+.checkBoxWrapper {
+  position: relative;
+}

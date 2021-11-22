@@ -1,0 +1,14 @@
+.myMap{
+    width: 100%;
+    display: flex;
+    margin-top: 45px;
+    padding: 10px 40px 30px 10px;
+    background-color: #ff6711;
+    background-image: url(../../cammon/map-bg.png);
+    background-size: contain;
+    border-radius: 50px;
+    background-position-x: right;
+    background-position-y: bottom;
+    height: 470px;
+    background-repeat: no-repeat;
+}

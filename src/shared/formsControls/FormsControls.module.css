@@ -1,0 +1,131 @@
+.fomControl {
+  width: calc(50% - 15px);
+  background: #fff;
+  border-radius: 14px;
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  position: relative;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.fomControl input {
+  outline: none;
+  border: none;
+}
+
+.fomControl.error {
+  border: 2px solid red;
+}
+
+.fomControl.error span {
+  color: red;
+}
+
+.errorMessage{
+    display: block;
+    position: absolute;
+    bottom: -25px;
+}
+
+.datePicker {
+  border: none;
+  padding: 15px 15px 15px 0;
+  cursor: pointer;
+}
+
+.datePicker:focus-visible {
+  outline: none;
+}
+
+.datePicker::placeholder{
+  color: red;
+}
+
+.datePickerError{
+  display: block;
+  position: absolute;
+  color: red;
+}
+
+
+
+.minus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-family: "Baloo 2" cursive;
+  font-weight: 700;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #252322;
+  border: none;
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-family: "Baloo 2" cursive;
+  font-weight: 700;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  color: #252322;
+  border: none;
+}
+
+.controlInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-family: "Baloo 2" cursive;
+  font-weight: 700;
+  font-size: 18px;
+  width: 60px;
+  text-align: center;
+  height: 60px;
+  background: #fc772c;
+  margin: 0 5px;
+  color: #fff;
+  border: none;
+}
+
+.controlInput.notActive {
+  background: #fff;
+  color: #252322;
+}
+
+.infoCard {
+  width: calc(50% - 15px);
+  margin-bottom: 30px;
+}
+
+.infoCard label {
+  font-family: "Baloo 2", cursive;
+  font-weight: 400;
+  font-size: 12px;
+  color: #252322;
+  opacity: 0.4;
+  padding: 0 20px;
+  margin-bottom: 5px;
+}
+
+.infoCard input {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  font-family: "Baloo 2", cursive;
+  font-weight: 500;
+  font-size: 18px;
+  color: #252322;
+  border: none;
+  outline: none;
+}

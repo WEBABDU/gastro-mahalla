@@ -1,0 +1,13 @@
+{
+    "welcome_to_react": "Welcome to React and react-i18next",
+    "about_project": "About the project",
+    "news": "News",
+    "organization": "Mahallas",
+    "contact": "Contact",
+    "sign_in": "Sign in",
+    "home_page": "Home",
+    "national_dishes": "National dishes in your area",
+    "enter_the_region": "Enter the region you are travelling",
+    "select_the_region": "Select the region",
+    "select_tourist_area": "Select a tourist area"
+}

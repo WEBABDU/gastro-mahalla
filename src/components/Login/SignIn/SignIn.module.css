@@ -1,0 +1,137 @@
+.formError {
+  border: 2px solid red;
+}
+
+.signInContent {
+  padding: 70px;
+  padding-bottom: 130px;
+  background: #f8f8f8;
+  border-radius: 30px;
+  margin-top: 100px;
+}
+
+.signInWelcome {
+  font-family: Comfortaa;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.signInTitle {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 127%;
+  color: #252322;
+}
+
+.newCards {
+  position: relative;
+}
+
+.newCards::after {
+  content: "";
+  position: absolute;
+  left: -66px;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nSub {
+  display: flex;
+  flex-direction: column;
+}
+
+.nSub span:first-child {
+  font-family: 'Baloo 2', cursive;
+  font-weight: bold;
+  font-size: 18px;
+  color: rgba(37, 35, 34, 0.7);
+}
+
+.signUpText {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 800;
+  color: rgba(43, 127, 255, 0.8);
+  position: relative;
+  margin-right: 5px;
+  text-decoration: none;
+  transition-property: border;
+  transition-duration: 1s;
+}
+
+.signUpText::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  background: rgba(43, 127, 255, 0.8);
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  border: 1.5px solid rgba(43, 127, 255, 0.8);
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  height: 1.5px;
+}
+
+.signUpText:hover::after {
+  transform: scale(1);
+  color: rgba(43, 127, 255, 0.8);
+}
+
+.signUpText:hover {
+  color: rgba(43, 127, 255, 0.8);
+}
+
+.signInForm {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fLogin {
+  background: #fff;
+  border-radius: 14px;
+  padding: 15px 20px;
+  border: 1px solid #fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.fLogin input {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  color: #252322;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.formButton {
+  margin-top: 35px;
+}
+
+.fLogin input:focus-visible {
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 992px) {
+  .newCards {
+    margin-top: 60px;
+  }
+
+  .newCards::after {
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    right: -80px;
+    top: -40px;
+    height: 1px;
+  }
+}

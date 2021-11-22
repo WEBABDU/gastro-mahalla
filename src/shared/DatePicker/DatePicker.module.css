@@ -1,0 +1,13 @@
+.datePicker {
+  border: none;
+  padding: 30px 25px 30px 0;
+  cursor: pointer;
+}
+
+.datePicker:focus-visible {
+  outline: none;
+}
+
+.datePicker::placeholder{
+  color: red;
+}

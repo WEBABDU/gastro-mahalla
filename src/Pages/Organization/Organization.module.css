@@ -1,0 +1,29 @@
+.wrapper {
+  margin-top: 40px;
+}
+
+.cardBlock {
+  margin-top: 111px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardsContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cardBlockTitle {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 127%;
+  color: #252322;
+  margin-bottom: 100px;
+}
+
+.miniCardsWrapper{
+    margin-top: 195px;
+}

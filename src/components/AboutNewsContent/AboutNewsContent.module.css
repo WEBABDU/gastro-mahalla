@@ -1,0 +1,71 @@
+.wrapper {
+  margin-top: 162px;
+}
+
+.card{
+    padding-top: 72px;
+}
+
+.newsTitle {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 127.7%;
+  color: #252322;
+}
+
+.newsDescription {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgba(37, 35, 34, 0.7);
+}
+
+.timeBlock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.cardTitle {
+  font-family: 2;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 135%;
+  color: #252322;
+  margin-bottom: 14px;
+}
+
+.timeBlock img {
+  margin-right: 10px;
+}
+
+.timeText {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgb(37, 35, 34);
+}
+
+
+@media (max-width: 992px) {
+  .newsBlock{
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mapBack{
+    width: 100%;
+  }
+
+  .mapBack img{
+    width: 100%;
+  }
+}

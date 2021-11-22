@@ -1,0 +1,53 @@
+.canceling {
+  position: absolute;
+  right: 50%;
+  bottom: calc(100% - 30px);
+  width: 290px;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 24px 34px rgb(18 29 69 / 10%);
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  font-family: Baloo2;
+  font-weight: 400;
+  font-size: 12px;
+  color: #252322;
+  transform-origin: right bottom;
+  transition: 0.3s ease-in-out;
+  transform: scaleY(0) scaleX(0);
+}
+
+.canceling.active {
+  transform: scaleY(1) scaleX(1);
+}
+
+.canceling span {
+  white-space: normal;
+  margin-bottom: 20px;
+}
+
+.canceling button {
+  padding: 15px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f8f8;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+
+.canceling button p {
+  margin: 0;
+  transition: 0.3s ease-in-out;
+  font-weight: 700;
+}
+
+.canceling button:hover{
+ background-color: #fc772c;   
+}
+
+.canceling button:hover p {
+    transform: scale(1.1);
+}

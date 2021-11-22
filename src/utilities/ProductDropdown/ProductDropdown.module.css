@@ -1,0 +1,70 @@
+.dropInfo {
+  position: relative;
+  cursor: pointer;
+}
+
+.myDropDown {
+  background: #fff;
+  border-radius: 10px;
+  font-family: Baloo2;
+  width: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  color: #252322;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+.activeArrow{
+  transform: rotate(180deg);
+  transition: 0.5s ease-in-out;
+}
+
+.dropdownContent {
+  position: absolute;
+  top: calc(100% - 8px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  z-index: 1;
+  padding: 10px 25px;
+  padding-top: 20px;
+  box-shadow: 0 20px 20px rgb(33 20 0 / 15%);
+  transform-origin: top;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  height: 200px;
+  transform: scaleY(0);
+  transition: .5s ease-in-out;
+}
+
+.dropdownContent.active {
+  transform: scaleY(1);
+}
+
+.ckeckBoxCon {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: Baloo2;
+  font-weight: 400;
+  font-size: 18px;
+  color: #252322;
+  margin-bottom: 12px;
+}
+
+.ckeckBoxCon .conText{
+  margin-left: 25px;
+}

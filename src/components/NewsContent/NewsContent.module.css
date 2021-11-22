@@ -1,0 +1,23 @@
+.wrapper{
+    margin-bottom: 160px;
+}
+
+.newsCardsLinks {
+  padding: 70px;
+  padding-bottom: 130px;
+  background: #f8f8f8;
+  border-radius: 30px;
+}
+
+.newsLinksAfter {
+  position: relative;
+}
+
+.newsLinksAfter::after {
+  position: absolute;
+  content: "";
+  right: 10px;
+  bottom: 7px;
+  top: 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}

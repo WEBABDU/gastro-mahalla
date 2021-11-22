@@ -1,0 +1,6 @@
+{
+    "plugins": ["react-bootstrap", "swiper", "redux", "react-redux", "react-leaflet", "leaflet"],
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }

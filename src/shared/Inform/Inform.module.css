@@ -1,0 +1,85 @@
+.wrapper{
+    margin-top: 40px;
+}
+
+.informLinks {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background: #f8f8f8;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+}
+
+.routerLinks {
+  font-family: Comfortaa;
+  font-weight: 700;
+  font-size: 18px;
+  color: rgba(37, 35, 34, 0.7);
+  transition: 0.3s ease-in-out;
+  transform-origin: center;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+.routerLinks:hover{
+  color: #252322;
+}
+
+.text span {
+  font-family: Comfortaa;
+  font-weight: 700;
+  font-size: 18px;
+  color: #252322;
+  padding-left: 16px;
+  position: relative;
+}
+
+.text span::after {
+  height: 25px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 2px solid #000;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.linkText {
+  font-family: Comfortaa;
+  font-weight: 400;
+  font-size: 16px;
+  color: #252322;
+  margin-right: 20px;
+}
+
+.shareLinks {
+  margin: 0 15px;
+}
+
+
+@media (max-width: 768px) {
+  .informLinks {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .informLinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .text{
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,15 @@
+.linksImg {
+  margin-right: 15px;
+}
+
+.appLinkTextBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appLinkText {
+  text-decoration: none;
+  color: #4d4f5e;
+  font-weight: bold;
+}

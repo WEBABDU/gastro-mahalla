@@ -1,0 +1,159 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactForm {
+  background: #ff6711;
+  display: flex;
+  width: 100%;
+  padding: 40px 60px;
+  background-image: url(../../cammon/mask-contact.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+
+.contactForm form:first-child {
+  width: 100%;
+}
+
+.formTitle {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 127%;
+  color: #252322;
+  margin-bottom: 27px;
+}
+
+.phoneLabel {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 127%;
+  color: #ffffff;
+  margin-right: 30px;
+}
+
+.numInputBorder {
+  width: 100%;
+  position: relative;
+}
+
+.numInputBorder::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-bottom: 2px solid hsla(0, 0%, 100%, 0.12549019607843137);
+}
+
+.numInput {
+  width: 100%;
+  background: transparent;
+  font-family: Baloo2;
+  font-weight: 700;
+  font-size: 46px;
+  color: #fff;
+  /* width: 280px; */
+  padding: 0;
+  line-height: 1;
+  border: none;
+}
+
+.numInput:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.numInput::placeholder {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 127.7%;
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.formCard {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.formCard.teleg {
+  position: relative;
+}
+
+.goFly {
+  position: absolute;
+  top: -80px;
+  left: 0;
+  width: 219px;
+  height: 191px;
+  background-image: url(../../cammon/goFly.svg);
+  background-size: cover;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.formCard.teleg input {
+  background: #fff;
+  border-radius: 12px;
+  padding: 17px 63px;
+  font-family: Comfortaa;
+  font-weight: 700;
+  font-size: 18px;
+  color: #252322;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  border: none;
+}
+
+@media (max-width: 992px) {
+  .goFly {
+    top: -139px;
+    right: -58px;
+    left: unset;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contactForm {
+    padding: 30px 20px;
+  }
+  
+  .goFly {
+    top: -90px;
+    right: -18px;
+    width: 130px;
+    height: 111px;
+    left: unset;
+    background-size: 80%, cover;
+  }
+
+  .phoneLabel {
+    font-size: 23px;
+  }
+
+  .numInput {
+    font-size: 23px;
+  }
+
+  .numInput::placeholder {
+    font-size: 23px;
+  }
+
+  .formCard.teleg input {
+    padding: 15px 50px;
+    font-size: 15px;
+  }
+}

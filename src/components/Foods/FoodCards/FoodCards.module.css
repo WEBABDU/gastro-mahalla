@@ -1,0 +1,11 @@
+.card{
+    border-radius: 30px;
+    box-shadow: 0px 34px 44px rgba(0, 0, 0, 0.08);
+    transition-property: transform;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}

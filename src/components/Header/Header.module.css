@@ -1,0 +1,19 @@
+.wrapper{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background-color: #FC772C;
+  z-index: 0;
+  padding-top: 53px;
+  padding-bottom: 63px;
+}
+
+.wrapper::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url('./../../cammon/back-body.png') 0 0 / cover no-repeat;
+  top: -1px;
+  z-index: -2;
+}

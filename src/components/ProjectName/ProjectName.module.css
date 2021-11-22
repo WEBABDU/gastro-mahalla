@@ -1,0 +1,73 @@
+.projectBlock {
+  padding: 62px 70px 0 120px;
+  margin-top: 162px;
+  background: #f8f8f8;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.projectTitle {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 127.7%;
+  color: #252322;
+  margin-bottom: 20px;
+}
+
+.projectDescription {
+  font-family: Comfortaa;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 180%;
+  color: #252322;
+}
+
+.appLinks {
+  display: flex;
+  align-items: center;
+  margin-top: 72px;
+}
+
+.appLinks .app:first-child {
+  margin-right: 20px;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 70px;
+  background: #e4e4e4;
+  border-radius: 16px;
+}
+
+@media (max-width: 992px) {
+  .projectBlock {
+    padding: 45px 45px 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectPhone img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .appLinks {
+    flex-wrap: wrap;
+  }
+
+  .projectPhone {
+    display: none;
+  }
+
+  .app{
+    margin-bottom: 20px;
+  }
+}

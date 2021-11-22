@@ -1,0 +1,43 @@
+.customCol {
+  padding: 0 25px;
+  margin-bottom: 50px;
+}
+
+.foodCard {
+  display: flex;
+  font-family: Baloo;
+  font-weight: bold;
+  position: relative;
+  font-size: 18px;
+  color: #252322;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 0 34px 44px rgb(0 0 0 / 8%);
+  border-radius: 30px;
+  padding: 25px 20px;
+  padding-top: 195px;
+  transform-origin: center;
+  height: 100%;
+  justify-content: center;
+}
+
+.foodCard:hover {
+  color: #252322;
+  transform: scale(1.025);
+}
+
+.productCardImg {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: 30px;
+  height: 180px;
+  top: 0;
+  overflow: hidden;
+}
+
+.productCardImg img {
+    width: 100%;
+  object-fit: cover;
+}

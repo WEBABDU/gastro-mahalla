@@ -1,0 +1,32 @@
+.newsCards {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.nDate {
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: #252322;
+}
+
+.nDate img {
+  margin-right: 10px;
+}
+
+.newsdescription {
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 130%;
+  color: #252322;
+  margin-bottom: 38px;
+}

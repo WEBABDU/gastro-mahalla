@@ -1,0 +1,83 @@
+.aboutUs {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  padding: 70px;
+  padding-bottom: 130px;
+  background: #f8f8f8;
+  border-radius: 30px;
+}
+
+.sub {
+  margin-bottom: 25px;
+}
+
+.sub p {
+  font-family: Comfortaa;
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.date {
+  display: flex;
+  margin-top: 75px;
+  font-family: 'Baloo 2', cursive;
+  font-size: 18px;
+  color: #252322;
+  align-items: center;
+}
+
+.date img {
+  margin-right: 10px;
+}
+
+.dateText {
+  display: contents;
+  font-family: 'Baloo 2', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  color: rgb(0, 0, 0);
+}
+
+.myNewsCards {
+  display: flex;
+  position: relative;
+}
+
+.myNewsCards::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  bottom: 0;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 992px) {
+  .date {
+    margin-top: 35px;
+    margin-bottom: 35px;
+  }
+
+  .myNewsCards {
+    margin-top: 50px;
+  }
+
+  .myNewsCards::after {
+    right: 0;
+    top: -50px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .wrapper {
+    padding: 30px;
+  }
+}

@@ -1,0 +1,29 @@
+.selectWrapper {
+  position: relative;
+}
+
+.selectWrapper::before {
+  content: "";
+  width: 13px;
+  height: 8px;
+  background: url("./../../cammon/down-arrow.png") center center / cover
+    no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+}
+
+.selectWrapper select {
+  display: block;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: #f8f8f8;
+  border-radius: 14px;
+  padding-left: 23px;
+}
+
+.selectWrapper select:focus-visible {
+  outline: none;
+}

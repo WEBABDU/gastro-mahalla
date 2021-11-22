@@ -1,0 +1,32 @@
+.selectWrapper {
+  padding-top: 168px;
+}
+
+.cardPartOne {
+  margin-bottom: 50px;
+}
+
+.cardPartTwo {
+  display: flex;
+  justify-content: center;
+}
+
+.moreButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 115px;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.moreButton:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .moreButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
