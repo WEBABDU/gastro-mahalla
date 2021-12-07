@@ -30,6 +30,7 @@
   line-height: 127%;
   color: #252322;
   margin-right: 15px;
+  text-transform: capitalize;
 }
 
 .radio:hover + .fake {

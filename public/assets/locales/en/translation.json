@@ -1,13 +1,75 @@
 {
-    "welcome_to_react": "Welcome to React and react-i18next",
+    "welcome": "Welcome to GastroMahalla",
     "about_project": "About the project",
     "news": "News",
     "organization": "Mahallas",
     "contact": "Contact",
     "sign_in": "Sign in",
+    "sign_up": "Sign Up",
+    "if_don't_sign": "If you have not registered yet",
+    "if_you_register": "Already have an account?",
     "home_page": "Home",
+    "who": "cheef",
+    "status": "tourist",
+    "order": "Orders",
+    "settings": "Settings",
+    "exit": "Exit",
+    "have_you_eaten": {
+        "first_line": "Have you",
+        "second_line": "eaten Jizzakh",
+        "third_line": "somsa?"
+    },
+    "more": "More",
+    "national": {
+        "titleText": "National dishes",
+        "description": "Registr as a tourist"
+    },
+    "local_dishes": {
+        "titleText": "Do you cook national dishes?",
+        "description": "Registr as a chef"
+    },
+    "inform_for_sign_up": {
+        "first_line": "Visit the homes of local people in the area near the sightseeings you are visiting and taste home-cooked national dishes. Get acquainted with Uzbek culture and way of life during the time you spend eating.",
+        "second_line": "To do this:",
+        "third_line": "1. Register",
+        "forthy_line": "2. Select a city",
+        "fifty_line": "3. Select a street in the city",
+        "sixty_line": "4. Go to the homeowner's page and order the food"
+    },
+    "inform_for_sign_up_cheef": {
+        "first_line": "Do you want to be self-employed and earn good money by welcoming tourists in your home? Then create your own menu sets for breakfast, lunch and dinner for no more than $ 8 per tourist and post them on your page. Fill in your page with the required information and get acquainted with the terms of using the application!",
+        "second_line": "To do this:",
+        "third_line": "1. Register",
+        "forthy_line": "2. Select a city",
+        "fifty_line": "3. Enter information about your home address and house yard",
+        "sixty_line": "4. Fill in the information about what gastronomic services you provide"
+    },
+    "upload_image": "Upload image",
     "national_dishes": "National dishes in your area",
     "enter_the_region": "Enter the region you are travelling",
     "select_the_region": "Select the region",
-    "select_tourist_area": "Select a tourist area"
+    "select_tourist_area": "Select a tourist area",
+    "objective_project": "The project aims to create a tourist environment in Uzbek mahallas, to provide practical assistance to citizens in starting a family business and becoming self-employed, to acquaint tourists with the traditions of cooking Uzbek national dishes and attract citizens engaged in the sale of national dishes in the field of tourist services. At the initial stage of the project, mahallas in Tashkent and Bukhara are involved.",
+    "food_name": "Name of the dish",
+    "guest": "Guest",
+    "portion": "Portion",
+    "time": "Time",
+    "case": "Status",
+    "my_orders": "My orders",
+    "profile_settings": "Profile settings",
+    "first_name": "First name",
+    "last_name": "Last name",
+    "email": "E-mail",
+    "password": "Password",
+    "confirm_password": "Confirm password",
+    "tel_number": "Contact number",
+    "cancel": "Cancel",
+    "organization_name": "Name of the organization",
+    "enter_adress": "Enter your adress",
+    "card_number": "Card number",
+    "if_tourist": "If you are a tourist:",
+    "if_cheef": "If you are a cook:",
+    "guest_house": "Guest house",
+    "private_meal": "Private meal in a local house",
+    "save": "Save"
 }

@@ -59,6 +59,10 @@
   border: none;
 }
 
+.tokenActive{
+  display: none;
+}
+
 .cardsButton {
   display: flex;
   align-items: center;

@@ -108,7 +108,7 @@
 
 .eStatus {
   position: relative;
-  background: url('./../../cammon/timeb.svg');
+  background: url("./../../cammon/timeb.svg");
   background-repeat: no-repeat;
   background-position: 50%;
   border: 1px solid #fc772c;
@@ -136,7 +136,93 @@
 .eStatus.notActive {
   background-image: url(../../cammon/cancel.svg);
   background-color: #fc772c;
-  cursor: auto;  
+  cursor: auto;
 }
 
+@media (max-width: 1199px) {
+  .eStatus {
+    margin: 0 5px;
+  }
+  .eName {
+    margin: 0 5px;
+  }
+  .ePerson {
+    margin: 0 5px;
+  }
+  .ePortion {
+    margin: 0 5px;
+  }
+  .eTime {
+    margin: 0 5px;
+  }
+}
 
+@media (max-width: 992px) {
+  .forFilter.details {
+    flex-wrap: wrap;
+    position: relative;
+  }
+  .eName {
+    width: 100%;
+    margin-bottom: 10px;
+    order: 1;
+  }
+
+  .eTime {
+    width: 100%;
+    order: 2;
+    margin: 0 5px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .ePerson {
+    position: relative;
+    order: 4;
+    padding-top: 20px;
+  }
+
+  .ePerson::after {
+    position: absolute;
+    content: attr(data-value);
+    top: 12px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Baloo2;
+    font-weight: 700;
+    font-size: 12px;
+    color: #252322;
+  }
+
+  .ePortion {
+    position: relative;
+    order: 3;
+    padding-top: 20px;
+  }
+
+  .ePortion::after {
+    position: absolute;
+    content: attr(data-value);
+    top: 12px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Baloo2;
+    font-weight: 700;
+    font-size: 12px;
+    color: #252322;
+  }
+
+  .eStatus {
+    order: 5;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  .eStatus.notActive {
+    order: 5;
+  }
+}

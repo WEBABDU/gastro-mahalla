@@ -12,6 +12,7 @@ const Settings = () => {
   const first_name = useSelector((state) => state.auth.first_name);
   const last_name = useSelector((state) => state.auth.last_name);
   const imagePerson = useSelector((state) => state.auth.image);
+  const cheef = useSelector((state) => state.auth.cheef);
   const [value, setValue] = useState(null);
   const [image, setImage] = useState(imagePerson.thumb);
   const dispatch = useDispatch();
@@ -39,17 +40,18 @@ const Settings = () => {
   return (
     <div className={style.wrapper}>
       <Container>
-        <Row>
-          <Col lg={4} className={style.customCol}>
+        <Row className={style.customRow}>
+          <Col xl={4} lg={4} md={6} sm={6}  className={style.customCol}>
             <Sidebar />
             <div className={style.closer}></div>
           </Col>
-          <Col lg={8} className={style.customCol}>
+          <Col xl={8} lg={8} md={6} sm={6}  className={style.customCol}>
             <div className={style.settingsContent}>
               <SettingsForm
                 setValue={setValue}
                 first_name={first_name}
                 last_name={last_name}
+                cheef={cheef}
                 image={image}
                 imagePerson={imagePerson}
                 profile={profile}

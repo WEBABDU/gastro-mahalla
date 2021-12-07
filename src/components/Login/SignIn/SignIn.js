@@ -8,9 +8,11 @@ import { login } from "../../../redux/auth-reducer";
 import { Input } from "../../../shared/formsControls/FormsControls";
 import { ButtonMore } from "../../../utilities/BottonMore/BottonMore";
 import { email, required } from "../../../utilities/validators/validators";
+import { useTranslation } from "react-i18next";
 import style from "./SignIn.module.css";
 
 const SignIn = () => {
+  const { t } = useTranslation()
   const dispatch = useDispatch();
   const onSubmit = ({ email, password }) => {
     dispatch(login(email, password));
@@ -29,20 +31,20 @@ const SignIn = () => {
         <Row className={style.signInContent}>
           <Col lg={6} md={12}>
             <p className={style.signInWelcome}>
-              GastroMahalla-ga xush kelibsiz
+              {t("welcome")}
             </p>
           </Col>
           <Col lg={4} md={12}>
             <div className={style.newCards}>
-              <h3 className={style.signInTitle}>Kirish</h3>
+              <h3 className={style.signInTitle}>{t("sign_in")}</h3>
               <div className={style.nSub}>
-                <span>Ro’yhatdan o’tmagan bo’lsangiz </span>
+                <span>{t("if_don't_sign")}</span>
                 <span>
                   <Link to="/signUp" className={style.signUpText}>
-                    Ro’yhatdan o’tish
+                    {t("sign_up")}
                   </Link>
                 </span>
-                <ReduxSignInForm onSubmit={onSubmit} />
+                <ReduxSignInForm onSubmit={onSubmit} t={t}/>
               </div>
             </div>
           </Col>
@@ -53,13 +55,13 @@ const SignIn = () => {
 };
 
 const SignInForm = (props) => {
-  const { handleSubmit } = props;
+  const { handleSubmit, t } = props;
 
   return (
     <form className={style.signInForm} onSubmit={handleSubmit}>
       <Field
         name="email"
-        placeholder="Kirish"
+        placeholder={t("email")}
         component={Input}
         validate={[required, email]}
         width="100%"
@@ -68,14 +70,14 @@ const SignInForm = (props) => {
       <Field
         name="password"
         type="password"
-        placeholder="Parol"
+        placeholder={t("password")}
         component={Input}
         validate={required}
         width="100%"
       />
 
       <div className={style.formButton}>
-        <ButtonMore value="Kirish" type="submit" />
+        <ButtonMore value={t("sign_in")} type="submit" />
       </div>
     </form>
   );

@@ -71,7 +71,7 @@
 .arrow {
   margin-left: auto;
   transform: rotate(0deg);
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .myDropdownMenu {
@@ -87,21 +87,21 @@
   display: flex;
   justify-content: center;
   transform: scaleY(0);
-  transition: all 0.5s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
   transform-origin: top;
   background-color: #fff;
 }
 
 .myDropdownMenu.active {
   transform: scaleY(1);
-  transition: all 0.5s ease-in-out !important;
+  transition: all 0.4s ease-in-out !important;
   transform-origin: top;
   top: calc(100% + 8px);
 }
 
 .arrow.active {
   transform: rotate(180deg);
-  transition: 0.5s ease-in-out !important;
+  transition: 0.4s ease-in-out !important;
 }
 
 .dmContent {

@@ -12,31 +12,32 @@ const SignUpForOrgan = ({
   setImageValue,
   image,
   radioButton2,
+  t
 }) => {
   return (
     <>
       <form className={style.logForm}>
         <div className={style.fLogin}>
-          <Field name="name" component="input" placeholder="Ismingiz" />
+          <Field name="name" component="input" placeholder={t("first_name")} />
         </div>
         <div className={style.fLogin}>
-          <Field name="surName" component="input" placeholder="Familyangiz" />
+          <Field name="surName" component="input" placeholder={t("last_name")} />
         </div>
         <div className={style.fLogin}>
           <Field
             name="contact"
             component="input"
-            placeholder="Telefon raqamingiz"
+            placeholder={t("tel_number")}
           />
         </div>
         <div className={style.fLogin}>
-          <Field name="email" component="input" placeholder="E-mail" />
+          <Field name="email" component="input" placeholder={t("email")} />
         </div>
         <div className={style.fSelect}>
           <Select>
             <select style={{ backgroundColor: "#fff" }}>
               <option value="" defaultChecked defaultValue>
-                Viloyatni tanlang
+                {t("select_the_region")}
               </option>
               {regions.map((region) => (
                 <option key={region.id} value={region.name}>
@@ -49,7 +50,7 @@ const SignUpForOrgan = ({
         <div className={style.fSelect}>
           <Select>
             <select style={{ backgroundColor: "#fff" }}>
-              <option value="">Turistik hududni tanlang</option>
+              <option value="">{t("select_tourist_area")}</option>
             </select>
           </Select>
         </div>
@@ -69,22 +70,22 @@ const SignUpForOrgan = ({
                 className={image ? style.selectedImg : null}
               />
             </div>
-            <span className={image ? style.activeImg : null}>Rasm yuklash</span>
+            <span className={image ? style.activeImg : null}>{t("upload_image")}</span>
           </label>
         </div>
 
         <div className={style.uploaderRight}>
           <div className={style.fLogin + " " + style.forEditor}>
-            <input required type="text" placeholder="Organizatsiya nomi" />
+            <input required type="text" placeholder={t("organization_name")} />
           </div>
           <div className={style.fLogin + " " + style.forEditor}>
-            <input required type="text" placeholder="Manzilingizni kiriting" />
+            <input required type="text" placeholder={t("enter_adress")} />
           </div>
           <div className={style.fLogin + " " + style.forEditor}>
             <input
               required
               type="text"
-              placeholder="Plastik karta raqamingiz"
+              placeholder={t("card_number")}
             />
           </div>
         </div>
@@ -103,15 +104,15 @@ const SignUpForOrgan = ({
           <QuillComponent />
         </div>
         <div className={style.fLogin}>
-          <Field component='input' name='password' type="text" placeholder="Parol" />
+          <Field component='input' name='password' type="text" placeholder={t("password")} />
         </div>
         <div className={style.fLogin}>
-          <Field component='input' name='ConfirmPassword' type="text" placeholder="Parolni tasdiqlang" />
+          <Field component='input' name='ConfirmPassword' type="text" placeholder={t("confirm_password")} />
         </div>
 
         <div className={style.moreButton}>
           <ButtonMore
-            value={radioValue === "cheef" ? "Ro'yhatdan o'tish" : "Kirish"}
+            value={radioValue === "cheef" ? t("sign_up") : t("sign_in")}
           />
         </div>
       </form>

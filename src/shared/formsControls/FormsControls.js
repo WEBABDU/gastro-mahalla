@@ -26,7 +26,7 @@ export const SettingsInput = ({ input, meta, ...props }) => {
   const hashError = meta.touched && meta.error;
   return (
     <>
-      <label>Ismingiz</label>
+      <label>{props.label}</label>
       <input type="text" {...input} {...props} />
     </>
   );

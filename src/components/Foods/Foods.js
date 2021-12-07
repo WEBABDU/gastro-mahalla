@@ -9,8 +9,10 @@ import { ButtonMore } from "../../utilities/BottonMore/BottonMore";
 import { useDispatch } from "react-redux";
 import { getRegions } from "../../redux/regions-reducer";
 import { useSelector } from "react-redux";
+import { useTranslation } from "react-i18next";
 
 const Foods = () => {
+  const { t } = useTranslation()
   const [city, setCity] = useState("");
   let cards = [
     { id: 0, src: cardImg, text: "Makaron qovurma" },
@@ -47,7 +49,7 @@ const Foods = () => {
             <FoodCard key={el.id} src={el.src} text={el.text} />
           ))}
           <div className={style.moreButton}>
-            <ButtonMore value="Barchasi" />
+            <ButtonMore value={t("more")} />
           </div>
         </Row>
       </Container>

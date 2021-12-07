@@ -3,6 +3,11 @@
   padding-bottom: 120px;
 }
 
+.customRow{
+  width: calc(100% + 80px);
+  margin: 0 -40px;
+}
+
 .customCol {
   padding: 0 40px;
 }
@@ -109,15 +114,41 @@
 }
 
 
+@media (max-width: 1199px) {
+  .eStatus {
+    margin: 0 5px;
+  }
+  .eName {
+    margin: 0 5px;
+  }
+  .ePerson {
+    margin: 0 5px;
+  }
+  .ePortion {
+    margin: 0 5px;
+  }
+  .eTime {
+    margin: 0 5px;
+  }
+}
 
 @media (max-width: 992px) {
+  .filterRow.hideInSm{
+    display: none;
+  }
+
+  
+}
+
+
+@media (max-width: 768px) {
   .closer {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 1;
+    z-index: 100;
     background-color: rgba(0, 0, 0, 0.05);
   }
 }

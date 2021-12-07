@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { connect } from "react-redux";
 import { Field, reduxForm } from "redux-form";
@@ -15,8 +16,13 @@ let SettingsForm = ({
   imagePerson,
   first_name,
   last_name,
+  cheef,
   handleSubmit
 }) => {
+
+   const { t } = useTranslation()
+
+
   return (
     <form className={style.settingsForm} onSubmit={handleSubmit}>
       <div className={style.imgSec}>
@@ -35,27 +41,27 @@ let SettingsForm = ({
           <span>Avatar</span>
         </label>
         <div>
-          <h5 className={style.pName}>{first_name}</h5>
-          <p className={style.pStatus}>{last_name}</p>
+          <h5 className={style.pName}>{first_name} {last_name}</h5>
+          <p className={style.pStatus}>{cheef ? t("who") : t("status")}</p>
         </div>
       </div>
       <div className={style.infoSec}>
         <div className={style.infoCard}>
-          <Field type="text" component={SettingsInput} name="first_name" />
+          <Field type="text" label={t("first_name")} component={SettingsInput} name="first_name" />
         </div>
         <div className={style.infoCard}>
-          <Field type="text" component={SettingsInput} name="last_name" />
+          <Field type="text" label={t("last_name")} component={SettingsInput} name="last_name" />
         </div>
         <div className={style.infoCard}>
-          <Field type="text" component={SettingsInput} name="email" />
+          <Field type="text" label={t("email")} component={SettingsInput} name="email" />
         </div>
         <div className={style.infoCard}>
-          <Field type="number" component={SettingsInput} name="phone" />
+          <Field type="number" label={t("tel_number")} component={SettingsInput} name="phone" />
         </div>
         <div className={`${style.infoCard} ${style.infoButtons}`}>
           <div className={style.buttons}>
-            <input type="button" value="Bekor qilish" />
-            <input type="submit" value="Saqlash" className={style.buttonSave} />
+            <input type="button" value={t("cancel")} />
+            <input type="submit" value={t("save")} className={style.buttonSave} />
           </div>
         </div>
       </div>

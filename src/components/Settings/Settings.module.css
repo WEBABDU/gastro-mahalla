@@ -7,6 +7,11 @@
   padding: 0 40px;
 }
 
+.customRow {
+  width: calc(100% + 80px);
+  margin: 0 -40px;
+}
+
 .settingsContent {
   padding: 50px 70px;
   background-color: #f8f8f8;
@@ -100,8 +105,14 @@
   justify-content: flex-end !important;
 }
 
+@media (max-width: 1199px) {
+  .settingsContent {
+    padding: 50px 30px;
+  }
+}
+
 @media (max-width: 992px) {
-  .closer {
+  /* .closer {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -109,5 +120,5 @@
     left: 0;
     z-index: 1;
     background: rgba(0, 0, 0, 0.05);
-  }
+  } */
 }

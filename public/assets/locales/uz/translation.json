@@ -1,13 +1,78 @@
 {
-    "welcome_to_react": "React ga Xush kelibsiz",
+    "welcome": "GastroMahalla-ga xush kelibsiz",
     "about_project": "Loyiha haqida",
     "news": "Yangiliklar",
-    "organization" : "Mahallalar",
+    "organization": "Mahallalar",
     "contact": "Aloqa",
     "sign_in": "Kirish",
+    "sign_up": "Ro’yhatdan o’tish",
+    "if_don't_sign": "Ro’yhatdan o’tmagan bo’lsangiz",
+    "if_you_register": "Ro’yhatdan o‘tgan bo’lsangiz?",
     "home_page": "Bosh sahifa",
+    "status": "turist",
+    "who": "oshpaz",
+    "order": "Buyurtmalar",
+    "settings": "Sozlamalar",
+    "exit": "Chiqish",
+    "have_you_eaten": {
+        "first_line": "Jizzax kosa",
+        "second_line": "somsalaridan tatib",
+        "third_line": "ko‘rdingizmi?"
+    },
+    "national": {
+        "titleText": "Mahalliy taomlar",
+        "description": "Turist sifatida ro‘yhatdan o‘ting"
+    },
+    "local_dishes": {
+        "titleText": "Milliy taomlar pishirasizmi?",
+        "description": "Oshpaz sifatida ro‘yhatdan o‘ting "
+    },
+    "inform_for_sign_up":{
+        "first_line": "Siz bu loyihada o‘zingiz tashrif buyuradigan turistik inshoatlar yaqinida joylashgan hududdan oddiy odamlarning honadoniga tashrif buyurib, uy sharoitida tayyorlangan milliy taomlarni tanovvul qilishingiz mumkin. Ovqatlanishga ajratilgan vaqtingizda madaniyatimiz, turmush tarzimiz bilan ham yaqinroq tanishing.",
+        "second_line": "Buning uchun:",
+        "third_line": "1. Ro‘yxatdan o‘ting",
+        "forthy_line": "2. Shaharni tanlang",
+        "fifty_line": "3. Shahardagi mahallalarni tanlang",
+        "sixty_line": "4. Xonadon egalarining sahifalariga o‘tib, taomlarni buyurtma qiling"
+    },
+    "inform_for_sign_up_cheef":{
+        "first_line": "Siz o‘z hovlingizda sayyohlarni kutib olib, o‘z-o‘zingizni band qilib yaxshigina daromad qilishni istaysizmi? Unda ertalabki nonushta, tushlik va kechki ovqat  xizmatlari uchun har bir sayyohga maksimal 8$ dan oshmagan set laringizni tuzing va sahifangizga joylashtiring. Sahifangizni kerakli ma’lumotlar bilan to‘ldiring va ilovaga ulanish shartlari bilan tanishib chiqing!",
+        "second_line": "Buning uchun:",
+        "third_line": "1. Ro‘yxatdan o‘ting",
+        "forthy_line": "2. Shaharni tanlang",
+        "fifty_line": "3. O‘z uy adresingiz va hovlingiz haqidagi ma’lumotlarni kiriting",
+        "sixty_line": "4. Qanday gastronomik xizmatlar ko‘rsatishingiz haqidagi ma’lumotlarni to‘ldiring"
+    },
+    "upload_image": "Rasm yuklash",
+    "more": "Batafsil",
     "national_dishes": "Joylashgan hududingizdagi taomlar",
     "enter_the_region": "Sayohat hududingizni belgilang",
     "select_the_region": "Viloyatni tanlang",
-    "select_tourist_area": "Turistik hududni tanlang"
+    "select_tourist_area": "Turistik hududni tanlang",
+    "objective_project": "Loyiha maqsadi mahallalarda turistik muhitni yaratish,  fuqarolarning oilaviy tadbirkorlikni yo‘lga qo‘yishlari va   o‘z-o‘zini bandetishlariga amaliy ko‘mak berish. Sayyohlarni milliy taomlarimiznitayyorlash an’analari  bilan yaqindan tanishtirish, milliy donaliktaom savdosi  bilan shug‘ullanadigan fuqarolarni sayyohlarga xizmat ko‘rsatish sohasiga jalb etishdan iborat.  Loyihaning dastlabki bosqichida Toshkent va Buxoro shaharlaridagimahallalar jalb etildi.",
+    "food_name": "Taom nomi",
+    "guest": "Mehmon",
+    "portion": "Portsiya",
+    "time": "Vaqti",
+    "case": "Holat",
+    "my_orders": "Buyurtmalar",
+    "profile_settings": "Profil sozlamalari",
+    "first_name": "Ismingiz",
+    "last_name": "Familyangiz",
+    "email":"Elektron pochta",
+    "password": "Parol",
+    "confirm_password": "Parolni tasdiqlang",
+    "tel_number": "Aloqa raqami",
+    "cancel": "Bekor qilish",
+    "organization_name": "Organizatsiya nomi",
+    "enter_adress": "Manzilingizni kiriting",
+    "card_number": "Plastik karta raqamingiz",
+    "if_tourist": "Agar siz turist bo’lsangiz:",
+    "if_cheef": "Agar siz oshpaz bo’lsangiz:",
+    "guest_house": "Mehmon uyi",
+    "private_meal": "Uy oshxonasi",
+    "save": "Saqlash"
+
+
+
 }
