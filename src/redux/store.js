@@ -8,7 +8,7 @@ import { reducer as formReducer } from "redux-form";
 import { productsReducer } from "./products-reducer";
 import { appReducer } from "./app-reducer";
 import { bookingReducer } from "./booking-reducer";
-
+import { routerReducer } from "react-router-redux";
 
 const reducers = combineReducers({
   signUp: signUpReducer,
@@ -18,6 +18,7 @@ const reducers = combineReducers({
   regions: regionsReducer,
   products: productsReducer,
   booking: bookingReducer,
+  routing: routerReducer,
   form: formReducer,
 });
 

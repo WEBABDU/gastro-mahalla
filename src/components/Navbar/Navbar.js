@@ -12,27 +12,32 @@ import { setIsActive } from "../../redux/sidebar-reducer";
 import Dropdown from "../../utilities/Dropdown/Dropdown";
 import { useTranslation } from "react-i18next";
 
-const NavbarApp = (props) => {
-  const location = useLocation()
+const NavbarApp = ({match, links}) => {
+  const location = useLocation();
   const pathName = location.pathname;
   const isActive = useSelector((state) => state.sidebar.isActive);
   const dispatch = useDispatch();
   const [menuActive, setMenuActive] = useState(false);
   const { t } = useTranslation();
-  // const [selected, setSelected] = useState("uz");
+  const account = localStorage.getItem("token");
 
-  
+
+  console.log("navbar", match);
+   
+  const profileHandleClick = () => {
+      dispatch(setIsActive(!isActive));
+  };
 
   return (
     <>
       <Container className={style.customContainer}>
         <div
           className={
-            pathName === "/" ? style.nav : style.nav + " " + style.nav2
+            pathName === `${match.url}` ? style.nav : style.nav + " " + style.nav2
           }
         >
           <div className={style.leftNav}>
-            <Link to="/">
+            <Link to={`${match.url}`}>
               <img
                 src={navBrand}
                 className={style.navBrandImg}
@@ -41,7 +46,7 @@ const NavbarApp = (props) => {
             </Link>
 
             <Link
-              to="/"
+              to={`${match.url}`}
               className={style.leftNavItem}
               onClick={() => setMenuActive(false)}
             >
@@ -63,8 +68,8 @@ const NavbarApp = (props) => {
               <span>{t("home_page")}</span>
             </Link>
             <div
-              className={style.profile}
-              onClick={() => dispatch(setIsActive(!isActive))}
+              className={account ? style.profile : style.profileNotActive}
+              onClick={profileHandleClick}
             >
               <img src={profile2} alt="profile2" />
             </div>
@@ -77,29 +82,29 @@ const NavbarApp = (props) => {
                 : style.linksBlock
             }
           >
-            {props.links.map((e) => (
+            {links.map((e) => (
               <Link
                 key={e.id}
                 onClick={() => setMenuActive(false)}
                 className={style.link}
-                to={`/${e.path}`}
+                to={`${match.url}/${e.path}`}
               >
                 {e.linkText}
               </Link>
             ))}
 
-            {localStorage.token ? (
+            {account ? (
               <Dropdown />
             ) : (
               <Link
                 onClick={() => setMenuActive(false)}
                 className={style.login}
-                to="/signIn"
+                to={`${match.url}/signIn`}
               >
                 <span>
                   <img src={profile} alt="profile" />
                 </span>
-                <p className={style.loginText}>{t('sign_in')}</p>
+                <p className={style.loginText}>{t("sign_in")}</p>
               </Link>
             )}
           </div>
@@ -115,7 +120,7 @@ const NavbarApp = (props) => {
               <span className={style.hamburgerInner} />
             </span>
           </button>
-          <LangDropdown/>
+          <LangDropdown />
         </div>
       </Container>
     </>

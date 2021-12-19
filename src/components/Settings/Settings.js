@@ -7,12 +7,14 @@ import profile from "./../../cammon/ProfileImg.png";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { updateImage, updateProfile } from "../../redux/settings-reducer";
+import { setIsActive } from "../../redux/sidebar-reducer";
 
 const Settings = () => {
   const first_name = useSelector((state) => state.auth.first_name);
   const last_name = useSelector((state) => state.auth.last_name);
   const imagePerson = useSelector((state) => state.auth.image);
   const cheef = useSelector((state) => state.auth.cheef);
+  const isActive = useSelector((state) => state.sidebar.isActive);
   const [value, setValue] = useState(null);
   const [image, setImage] = useState(imagePerson.thumb);
   const dispatch = useDispatch();
@@ -31,7 +33,9 @@ const Settings = () => {
   }, [value]);
 
   const onSubmit = ({ first_name, last_name, phone, email, image }) => {
-    const blob = new Blob([JSON.stringify(image, null, 2)], {type : 'application/json'});
+    const blob = new Blob([JSON.stringify(image, null, 2)], {
+      type: "application/json",
+    });
     console.log(blob);
     dispatch(updateProfile(email, first_name, last_name, phone));
     dispatch(updateImage(blob));
@@ -41,11 +45,14 @@ const Settings = () => {
     <div className={style.wrapper}>
       <Container>
         <Row className={style.customRow}>
-          <Col xl={4} lg={4} md={6} sm={6}  className={style.customCol}>
+          <Col xl={4} lg={4} md={6} sm={6} className={style.customCol}>
             <Sidebar />
-            <div className={style.closer}></div>
+            <div
+              onClick={() => dispatch(setIsActive(false))}
+              className={isActive ? style.closer : ""}
+            ></div>
           </Col>
-          <Col xl={8} lg={8} md={6} sm={6}  className={style.customCol}>
+          <Col xl={8} lg={8} md={6} sm={6} className={style.customCol}>
             <div className={style.settingsContent}>
               <SettingsForm
                 setValue={setValue}

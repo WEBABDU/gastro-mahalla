@@ -10,12 +10,13 @@ import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { getOrganization, getRegions } from "../../redux/regions-reducer";
 
-const Organization = (props) => {
+const Organization = ({ match }) => {
   const [city, setCity] = useState("");
   const cards = useSelector((state) => state.regions.organization);
   const regions = useSelector((state) => state.regions.regions);
   const dispatch = useDispatch();
 
+  console.log("org", match);
   useEffect(() => {
     dispatch(getRegions());
     dispatch(getOrganization());
@@ -33,7 +34,7 @@ const Organization = (props) => {
           </h5>
           <Row className={style.cardsContent}>
             {cards.map((el) => (
-              <OrganizationCard key={el.id} card={el} />
+              <OrganizationCard key={el.id} card={el} match={match} />
             ))}
           </Row>
         </div>

@@ -12,7 +12,7 @@ import {
   getOrganization,
   getOrganizationById,
 } from "../../redux/regions-reducer";
-import { Redirect, useHistory, withRouter } from "react-router";
+import { Redirect, useHistory, withRouter } from "react-router-dom";
 import { OrganizationCard } from "../../shared/OrganizationCard/OrganizationCard";
 import { NavLink } from "react-router-dom";
 import { MiniCards } from "../../shared/MiniCards/MiniCards";
@@ -43,6 +43,8 @@ const Products = (props) => {
       func(value - 1);
     }
   };
+
+  // console.log("product", props.match);
 
   const onSubmit = ({ odam, portsia, datepicker }) => {
     if (!localStorage.getItem("token")) {
@@ -130,7 +132,7 @@ const Products = (props) => {
 
         <Row className={style.cardsContent}>
           {organizationPortion.map((el) => (
-            <OrganizationCard key={el.id} card={el} />
+            <OrganizationCard key={el.id} card={el} match={props.match}/>
           ))}
         </Row>
         <div className={style.allCard} onClick={() => window.scroll(0, 0)}>

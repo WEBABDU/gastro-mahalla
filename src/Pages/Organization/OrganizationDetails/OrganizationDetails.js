@@ -23,7 +23,7 @@ const OrganizationDetails = (props) => {
   const products = useSelector((state) => state.products.products);
   const organization = useSelector((state) => state.regions.organization);
   const organizationPortion = organization.slice(0, 6);
-  console.log(organizationPortion);
+  console.log("deta", props.match.locale);
 
   useEffect(() => {
     let userId = props.match.params.userId;
@@ -93,7 +93,7 @@ const OrganizationDetails = (props) => {
 
         <Row className={style.cardsContent}>
           {organizationPortion.map((el) => (
-            <OrganizationCard key={el.id} card={el} />
+            <OrganizationCard key={el.id} card={el} match={props.match} />
           ))}
         </Row>
         <div className={style.allCard} onClick={() => window.scroll(0, 0)}>
